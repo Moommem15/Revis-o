@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisão sobre conceitos basicos de html,css,js</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <script src="/JS/Main.js" defer></script>
+
 </head>
-<body >
+
+<body>
     <header>
         <div class="Logo">
             <img src="/IMG/chapeu-da-graduacao.png" alt="">
@@ -17,7 +21,7 @@
             <a href="">Sobre</a>
         </nav>
         <div class="BtContrato">
-            <button>Contrate-me</button>
+            <button onclick="AbrirForm()">Contrate-me</button>
         </div>
     </header>
     <section class="ImgTexto">
@@ -27,13 +31,14 @@
             <h2>Aprenda Tecnologia na Prática</h2>
             <p>Desenvolva suas habilidades com os melhores conteúdos e projetos guiados em um único lugar.</p>
         </div>
-        
+
     </section>
     <!-- --Card normal 3 -->
     <section class="Cards">
         <div class="Textosection">
             <h2>APRENDIZADO COMPLETO</h2>
-            <p>Do esporte à inovação, cobrimos todas as frentes. Explore uma ampla gama de cursos e atividades para desenvolver habilidades criativas, científicas, e de negócios.</p>
+            <p>Do esporte à inovação, cobrimos todas as frentes. Explore uma ampla gama de cursos e atividades para
+                desenvolver habilidades criativas, científicas, e de negócios.</p>
         </div>
         <div class="ListaCard">
             <div class="CardNormal">
@@ -42,7 +47,8 @@
                     <span>Fisica</span>
                 </div>
                 <div class="TextoCardNormal">
-                    <p>Conecte ideias, explore o método científico e estimule o pensamento crítico através de debates e conceitos de exatas e humanas.</p>
+                    <p>Conecte ideias, explore o método científico e estimule o pensamento crítico através de debates e
+                        conceitos de exatas e humanas.</p>
                 </div>
             </div>
             <div class="CardNormal">
@@ -51,7 +57,8 @@
                     <span>Ed. Fisica</span>
                 </div>
                 <div class="TextoCardNormal">
-                    <p>Pratique modalidades esportivas, melhore seu condicionamento e entenda a importância do trabalho em equipe para a saúde e o bem-estar.</p>
+                    <p>Pratique modalidades esportivas, melhore seu condicionamento e entenda a importância do trabalho
+                        em equipe para a saúde e o bem-estar.</p>
                 </div>
             </div>
             <div class="CardNormal">
@@ -60,42 +67,101 @@
                     <span>Fisica</span>
                 </div>
                 <div class="TextoCardNormal">
-                    <p>Aprenda a controlar seu orçamento, analisar gráficos de desempenho e tomar decisões estratégicas para o seu futuro financeiro.</p>
+                    <p>Aprenda a controlar seu orçamento, analisar gráficos de desempenho e tomar decisões estratégicas
+                        para o seu futuro financeiro.</p>
                 </div>
             </div>
         </div>
     </section>
-     <section class="Cards">
+    <section class="Cards">
         <div class="Textosection">
             <h2>APRENDIZADO COMPLETO</h2>
-            <p>Do esporte à inovação, cobrimos todas as frentes. Explore uma ampla gama de cursos e atividades para desenvolver habilidades criativas, científicas, e de negócios.</p>
+            <p>Do esporte à inovação, cobrimos todas as frentes. Explore uma ampla gama de cursos e atividades para
+                desenvolver habilidades criativas, científicas, e de negócios.</p>
         </div>
         <div class="ListaCard">
             <div class="Card">
                 <div class="ImgCard">
-                    <video src="/Videos/Video3.mp4" autoplay loop></video>
+                    <video src="/Videos/Video3.mp4" autoplay loop muted></video>
                 </div>
                 <div class="TextoCard">
-                    <p>Conecte ideias, explore o método científico e estimule o pensamento crítico através de debates e conceitos de exatas e humanas.</p>
+                    <p>Conecte ideias, explore o método científico e estimule o pensamento crítico através de debates e
+                        conceitos de exatas e humanas.</p>
                 </div>
             </div>
             <div class="Card">
                 <div class="ImgCard">
-                   <video src="/Videos/Video2.mp4" autoplay loop></video>
+                    <video src="/Videos/Video2.mp4" autoplay loop muted> </video>
                 </div>
                 <div class="TextoCard">
-                    <p>Pratique modalidades esportivas, melhore seu condicionamento e entenda a importância do trabalho em equipe para a saúde e o bem-estar.</p>
+                    <p>Pratique modalidades esportivas, melhore seu condicionamento e entenda a importância do trabalho
+                        em equipe para a saúde e o bem-estar.</p>
                 </div>
             </div>
             <div class="Card">
                 <div class="ImgCard">
-                    <video src="/Videos/Video1.mp4" autoplay loop></video>
+                    <video src="/Videos/Video1.mp4" autoplay loop muted></video>
                 </div>
                 <div class="TextoCard">
-                    <p>Aprenda a controlar seu orçamento, analisar gráficos de desempenho e tomar decisões estratégicas para o seu futuro financeiro.</p>
+                    <p>Aprenda a controlar seu orçamento, analisar gráficos de desempenho e tomar decisões estratégicas
+                        para o seu futuro financeiro.</p>
                 </div>
             </div>
         </div>
     </section>
+    <div class="Modal" id="Modal">
+        <form>
+            <div class="FormContato" id="FormContato">
+                <div class="TomForm">
+                    <h2>FALE CONOSCO</h2>
+                    <button onclick="FecharForm()">X</button>
+                </div>
+                <div class="Inputs">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" required>
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" required>
+                    <label for="Assunto">Assunto</label>
+                    <input type="text" id="Assunto" required>
+                </div>
+                <label for="Menssagem">Menssagem</label>
+                <textarea name="" id="Menssagem"></textarea>
+                <div class="BtEnviar">
+                    <button>Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <section class="Galera">
+        <div class="Textosection">
+            <h2>Livros para estudos</h2>
+            <p>Livros escolhido a dedo para melhor aprendizado.</p>
+        </div>
+        <div class="Filtros" id="Filtros">
+            <button onclick="MostrarGaleria(0)">Todos</button>
+        </div>
+        <div class="ListaCard" id="ListaLivros">
+            <div class="Card">
+                <div class="ImgCard">
+                    <img src="" alt="">
+                </div>
+                <div class="TextoCard">
+                    <span>Titulo</span>
+                    <div class="Detalhe">
+                        <span>Autor:</span>
+                        <span>Autor:</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            
+        </div>
+    </footer>
 </body>
+        
+
 </html>

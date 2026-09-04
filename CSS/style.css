@@ -140,3 +140,64 @@ img {
 .TextoCardNormal:hover{
     opacity: 100;
 }
+.FormContato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: var(--bg-card);
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+   
+}
+.Inputs{
+    display: flex;
+    flex-direction: column;
+}
+.Inputs input{
+    width: 200px;
+    height: 15px;
+}
+.FormContato textarea{
+    height: 50px;
+    width: 200px;
+}
+.Modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.TomForm{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.TomForm button{
+    background-color: transparent;
+    border: none;
+    color: red;
+    margin-left: auto;
+    margin-right: 4px;
+}
+.BtEnviar{
+    margin-top: 15px;
+}
+.BtEnviar button{
+    width: 150px;
+}
+.Detalhe span{
+    width: 100px;
+}
+.Detalhe{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 5px;
+}
+.
